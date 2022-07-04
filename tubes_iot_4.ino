@@ -8,7 +8,6 @@
 #include <WiFi.h>
 #include <Adafruit_MQTT.h>
 #include <Adafruit_MQTT_Client.h>
-// #include <NTPClient.h>
 
 #define WIFI_SSID "wytruii"
 #define WIFI_PASSWORD "aa12345678"
@@ -57,9 +56,6 @@ void setup()
   Serial.print("Connected with IP: ");
   Serial.println(WiFi.localIP());
   Serial.println();
-  
-  /* //sambungkan timeClient dengan NTP server
-  timeClient.begin(); */
 
   lcd.init();
   lcd.backlight();
